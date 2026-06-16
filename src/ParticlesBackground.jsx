@@ -54,9 +54,9 @@ const ParticlesBackground = ({ theme }) => {
           },
           links: {
             color: theme === 'light' ? "#0284C7" : "#00F0FF",
-            distance: 160,
+            distance: 90,
             enable: true,
-            opacity: 0.25,
+            opacity: 0.4,
             width: 1.5,
           },
           move: {
@@ -66,7 +66,7 @@ const ParticlesBackground = ({ theme }) => {
               default: "bounce",
             },
             random: true,
-            speed: 1.5,
+            speed: 1.2,
             straight: false,
           },
           number: {
@@ -74,7 +74,7 @@ const ParticlesBackground = ({ theme }) => {
               enable: true,
               area: 800,
             },
-            value: 350,
+            value: 1000,
           },
           opacity: {
             value: { min: 0.3, max: 0.8 },
