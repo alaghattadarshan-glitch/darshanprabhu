@@ -54,10 +54,10 @@ const ParticlesBackground = ({ theme }) => {
           },
           links: {
             color: theme === 'light' ? "#0284C7" : "#00F0FF",
-            distance: 120,
+            distance: 160,
             enable: true,
-            opacity: 0.15,
-            width: 1,
+            opacity: 0.25,
+            width: 1.5,
           },
           move: {
             direction: "none",
@@ -66,24 +66,24 @@ const ParticlesBackground = ({ theme }) => {
               default: "bounce",
             },
             random: true,
-            speed: 1.2,
+            speed: 1.5,
             straight: false,
           },
           number: {
             density: {
               enable: true,
-              area: 600,
+              area: 800,
             },
-            value: 150,
+            value: 350,
           },
           opacity: {
-            value: 0.5,
+            value: { min: 0.3, max: 0.8 },
           },
           shape: {
             type: "circle",
           },
           size: {
-            value: { min: 1, max: 2.5 },
+            value: { min: 1, max: 4 },
           },
         },
         detectRetina: true,
